@@ -1,0 +1,67 @@
+graph TB
+    subgraph "Frontend Layer"
+        UI[User Interface]
+        subgraph "Mobile Apps"
+            iOS[iOS - Swift]
+            Android[Android - Kotlin]
+        end
+        UI --> iOS
+        UI --> Android
+    end
+
+    subgraph "Backend Layer"
+        API[REST API Server]
+        Auth[Authentication Service]
+        Upload[File Upload Service]
+        
+        subgraph "Real-time Services"
+            RT[Real-time Server]
+            Push[Push Notification Service]
+        end
+    end
+
+    subgraph "Database Layer"
+        DB[(Main Database)]
+        Cache[(Cache)]
+        Storage[File Storage]
+    end
+
+    subgraph "Core Features"
+        Items[Item Management]
+        Users[User Management]
+        Messages[Messaging System]
+        Trans[Transaction System]
+        Search[Search & Filter]
+        Admin[Admin Panel]
+    end
+
+    iOS & Android --> API
+    iOS & Android --> RT
+
+    API --> Auth
+    API --> Upload
+    API --> RT
+    RT --> Push
+
+    Auth --> DB
+    Upload --> Storage
+    API --> DB
+    RT --> Cache
+
+    Items & Users & Messages & Trans & Search & Admin --> API
+
+    subgraph "DevOps & Infrastructure"
+        CI[CI/CD Pipeline]
+        Monitor[Monitoring]
+        Backup[Backup System]
+    end
+
+    classDef primary fill:#2ecc71,stroke:#27ae60,stroke-width:2px,color:#fff
+    classDef secondary fill:#3498db,stroke:#2980b9,stroke-width:2px,color:#fff
+    classDef storage fill:#e74c3c,stroke:#c0392b,stroke-width:2px,color:#fff
+    classDef service fill:#9b59b6,stroke:#8e44ad,stroke-width:2px,color:#fff
+
+    class iOS,Android primary
+    class API,Auth,Upload,RT,Push secondary
+    class DB,Cache,Storage storage
+    class Items,Users,Messages,Trans,Search,Admin service
