@@ -1,0 +1,51 @@
+graph TB
+    subgraph "Authentication Flow"
+        Start((Start)) --> Splash[Splash Screen<br/>Finder Logo]
+        Splash --> Login[Login Screen<br/>Email/Password]
+        Splash --> Register[Register Screen<br/>Create Account]
+        Login --> RoleSelect[Role Selection<br/>Buyer/Seller]
+        Register --> RoleSelect
+    end
+
+    subgraph "Buyer Flow"
+        RoleSelect -->|Buyer| Browse[Browse Items]
+        Browse --> ItemDetail[Item Details<br/>Price/Condition/Description]
+        ItemDetail -->|Message| Chat[Chat with Seller]
+        ItemDetail -->|Buy| Cart[Shopping Cart]
+        Cart --> Payment[Payment Options<br/>Credit Card/PayPal]
+        Payment --> OrderSummary[Order Summary<br/>Total/Fees/Shipping]
+        OrderSummary --> Confirmation[Order Confirmation]
+    end
+
+    subgraph "Seller Flow"
+        RoleSelect -->|Seller| CreateListing[Create Listing]
+        CreateListing --> Photos[Add Photos]
+        Photos --> Details[Item Details<br/>Price/Condition/Description]
+        Details --> Preview[Preview Listing]
+        Preview -->|Post| Active[Active Listing]
+        Active --> Messages[Message Center]
+        Active --> Orders[Order Management]
+    end
+
+    subgraph "Messaging System"
+        Chat --> Inbox[Message Inbox]
+        Messages --> Inbox
+        Inbox --> Thread[Message Thread]
+        Thread --> Negotiation[Price Negotiation]
+    end
+
+    subgraph "Payment Processing"
+        Payment --> ProcessPayment[Process Payment]
+        ProcessPayment --> SellerNotify[Notify Seller]
+        SellerNotify --> TrackOrder[Order Tracking]
+    end
+
+    style Start fill:#ff9999
+    style Splash fill:#ffcccc
+    style RoleSelect fill:#99ff99
+    style Payment fill:#9999ff
+    style Inbox fill:#ffff99
+    style Active fill:#ff99cc
+
+    classDef flowNode fill:#f9f9f9,stroke:#333,stroke-width:2px
+    class Browse,ItemDetail,Cart,CreateListing,Photos,Details,Preview flowNode
