@@ -125,7 +125,7 @@ flutter run
 
 ## 📱 App Screenshots
 
-[Add screenshots of key app screens here]
+[![image](https://github.com/user-attachments/assets/e0dbdf4a-9013-494d-abd7-6e4a2b331190)]
 
 ## 🤝 Contributing
 
