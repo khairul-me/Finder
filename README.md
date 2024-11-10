@@ -133,9 +133,19 @@ We welcome contributions to Finder! for details on our code of conduct and the p
 
 ## 🙏 Acknowledgments
 
-- FlutterFlow team for their excellent development platform
-- Our college communities for inspiration and support
-- All contributors who have helped shape this project
+- **HackPrinceton 2024** - Where this project was initially conceived and developed during the 36-hour hackathon at Princeton University
+
+- **Hobart and William Smith Robotics Club**
+  - Liam Davidson – For invaluable feedback, technical expertise, and driving support during the Hackathon
+  - Evan Nolan – A great contributor for brainstorming.
+  - Souvick Rodrigues – A wonderful singer. 
+
+- **FlutterFlow team** - For providing an excellent development platform that made our rapid prototyping possible
+
+- **Our College Communities** - For inspiration and continued support in making campus sustainability a priority
+
+- **All contributors** - Who have helped shape this project through feedback and testing
+
 
 ## 📞 Contact
 
