@@ -1,7 +1,6 @@
 # Finder - Campus Marketplace App 🎓
 
 [![Flutter](https://img.shields.io/badge/Built%20with-FlutterFlow-02569B?logo=flutter)](https://flutterflow.io)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Finder is a campus-specific marketplace application that revolutionizes how college communities buy and sell items. Inspired by Tinder's intuitive interface, Finder creates a secure, anonymous platform for students and staff to trade items within their campus community.
 
@@ -131,9 +130,6 @@ flutter run
 
 We welcome contributions to Finder! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
