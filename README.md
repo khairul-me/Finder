@@ -124,7 +124,7 @@ flutter run
 
 ## 📱 App Screenshots
 
-![image](https://github.com/user-attachments/assets/e0dbdf4a-9013-494d-abd7-6e4a2b331190)
+![image]![7](https://github.com/user-attachments/assets/8b63b222-eae7-4c0f-9f83-6b7834d9e74f)
 
 ## 🤝 Contributing
 
