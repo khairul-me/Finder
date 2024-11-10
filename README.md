@@ -128,7 +128,7 @@ flutter run
 
 ## 🤝 Contributing
 
-We welcome contributions to Finder! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+We welcome contributions to Finder! for details on our code of conduct and the process for submitting pull requests.
 
 
 ## 🙏 Acknowledgments
